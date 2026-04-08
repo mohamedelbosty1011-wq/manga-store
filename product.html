@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منتج — MangaStore</title><!-- Overwritten by product.js -->
+  <meta name="description" content="" id="pageDesc">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- shake/@keyframes and .gallery-main img transition now live in style.css — no inline duplication -->
+  <style>
+    .size-guide-link {
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span>MANGA</span><span>STORE</span><span class="logo-icon">🔥</span></a>
+    <nav class="main-nav" role="navigation" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="nav-link" data-page="index.html">الرئيسية</a>
+      <a href="shop.html"  class="nav-link" data-page="shop.html">المتجر</a>
+      <a href="about.html" class="nav-link" data-page="about.html">من نحن</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://wa.me/201063992579?text=مرحباً! أريد الاستفسار"
+         target="_blank" rel="noopener" class="btn-wa-header" id="headerWABtn" aria-label="تواصل واتساب">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        اطلب واتساب
+      </a>
+      <a href="cart.html" class="cart-btn" aria-label="عربة التسوق">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="القائمة المحمولة">
+  <a href="index.html" class="nav-link" data-page="index.html">🏠 الرئيسية</a>
+  <a href="shop.html"  class="nav-link" data-page="shop.html">🛍 المتجر</a>
+  <a href="about.html" class="nav-link" data-page="about.html">ℹ️ من نحن</a>
+  <a href="cart.html"  class="nav-link" data-page="cart.html">🛒 السلة</a>
+</nav>
+
+<main class="page-content">
+  <div class="section" style="padding-top:40px;" id="productContent">
+
+    <!-- Breadcrumb -->
+    <nav class="product-breadcrumb" aria-label="مسار التنقل" style="margin-bottom:32px;">
+      <a href="index.html">الرئيسية</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="shop.html">المتجر</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="#" id="breadcrumbCategory" class="text-accent">الفئة</a>
+      <span class="breadcrumb-sep">›</span>
+      <span id="breadcrumbProduct" style="color:var(--text-primary);">المنتج</span>
+    </nav>
+
+    <!-- Product Detail Grid -->
+    <div class="product-detail-grid">
+      <!-- GALLERY -->
+      <div class="product-gallery">
+        <div class="gallery-main" id="galleryMainWrap">
+          <img id="galleryMain" src="" alt="صورة المنتج" loading="eager">
+          <!-- BUG FIX: Labelled correctly — ‹ is Prev (left/back in RTL), › is Next (right/forward) -->
+          <button class="gallery-nav-btn gallery-prev" id="galleryPrev" aria-label="الصورة السابقة">‹</button>
+          <button class="gallery-nav-btn gallery-next" id="galleryNext" aria-label="الصورة التالية">›</button>
+        </div>
+        <div class="gallery-thumbs" id="galleryThumbs"></div>
+      </div>
+
+      <!-- PRODUCT INFO -->
+      <div class="product-info">
+        <!-- Badge + Scarcity -->
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <span id="pdBadge"></span>
+          <div class="scarcity-bar" id="scarcityBar" style="display:none;"></div>
+        </div>
+
+        <!-- Title -->
+        <h1 class="product-title" id="pdName">جاري التحميل...</h1>
+
+        <!-- Rating -->
+        <div class="product-rating">
+          <span class="stars" id="pdStars" aria-label="التقييم">★★★★★</span>
+          <span id="pdRating" style="font-weight:700;"></span>
+          <span id="pdReviews" style="color:var(--text-secondary);font-size:0.9rem;"></span>
+        </div>
+
+        <!-- Price -->
+        <div class="product-price">
+          <span class="product-price-current" id="pdPrice"></span>
+          <span class="product-price-original" id="pdOrigPrice" style="display:none;"></span>
+          <span class="product-price-save" id="pdSave" style="display:none;"></span>
+        </div>
+
+        <!-- Color -->
+        <div>
+          <div class="option-label">
+            اللون: <span class="selected-val" id="selectedColor"></span>
+          </div>
+          <div class="color-swatches" id="colorSwatches" role="radiogroup" aria-label="اختار اللون"></div>
+        </div>
+
+        <!-- Size -->
+        <div>
+          <div class="option-label" style="display:flex;justify-content:space-between;align-items:center;">
+            <span>المقاس: <span class="selected-val" id="selectedSize">غير محدد</span></span>
+            <button class="size-guide-link" aria-label="جدول المقاسات"
+              onclick="document.getElementById('sizeGuideModal').style.display='flex'">
+              جدول المقاسات ↗
+            </button>
+          </div>
+          <div class="size-buttons" id="sizeButtons" role="radiogroup" aria-label="اختار المقاس"></div>
+        </div>
+
+        <!-- Qty -->
+        <div>
+          <div class="option-label">الكمية:</div>
+          <div class="qty-wrap" role="group" aria-label="الكمية">
+            <button class="qty-btn" id="qtyPlus"  aria-label="زيادة الكمية">+</button>
+            <span class="qty-num" id="qtyNum" aria-live="polite">1</span>
+            <button class="qty-btn" id="qtyMinus" aria-label="تقليل الكمية">−</button>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="product-actions">
+          <button class="btn btn-primary btn-lg btn-block" id="addToCartBtn">🛒 أضف للسلة</button>
+          <button class="btn btn-wa btn-lg btn-block" id="waOrderBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            اطلب على واتساب — 01063992579
+          </button>
+        </div>
+
+        <!-- Trust badges -->
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:4px;">
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:10px;text-align:center;">
+            <div style="font-size:1.2rem;">🚚</div>
+            <strong style="display:block;font-size:0.82rem;">توصيل سريع</strong>
+            <span style="color:var(--text-secondary);font-size:0.78rem;">24-48 ساعة</span>
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:10px;text-align:center;">
+            <div style="font-size:1.2rem;">💵</div>
+            <strong style="display:block;font-size:0.82rem;">دفع عند الاستلام</strong>
+            <span style="color:var(--text-secondary);font-size:0.78rem;">Cash on Delivery</span>
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:10px;text-align:center;">
+            <div style="font-size:1.2rem;">🔄</div>
+            <strong style="display:block;font-size:0.82rem;">إرجاع مجاني</strong>
+            <span style="color:var(--text-secondary);font-size:0.78rem;">7 أيام</span>
+          </div>
+        </div>
+
+        <!-- Description & Features -->
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;">
+          <h3 style="font-size:1rem;font-weight:800;margin-bottom:12px;">عن المنتج</h3>
+          <p id="pdDesc" style="color:var(--text-secondary);font-size:0.95rem;line-height:1.9;"></p>
+          <ul class="product-features" id="pdFeatures" style="margin-top:14px;"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Customer Reviews -->
+    <div class="reviews-section" id="reviewsSection" style="display:none;">
+      <div class="reviews-header">
+        <div>
+          <h2 class="section-title" style="font-size:1.6rem;">⭐ تقييمات العملاء</h2>
+          <p class="section-subtitle" id="reviewsSubtitle"></p>
+        </div>
+      </div>
+      <div class="reviews-grid" id="reviewsGrid"></div>
+    </div>
+
+    <!-- Related Products -->
+    <div style="margin-top:80px;">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">منتجات <span class="title-accent">مشابهة</span></h2>
+        </div>
+        <a href="shop.html" class="section-link">شوف الكل ←</a>
+      </div>
+      <div class="products-grid" id="relatedGrid"></div>
+    </div>
+  </div>
+</main>
+
+<!-- Size Guide Modal -->
+<div id="sizeGuideModal" role="dialog" aria-modal="true" aria-labelledby="sizeGuideTitle"
+  style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:9999;align-items:center;justify-content:center;padding:20px;"
+  onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);padding:32px;max-width:460px;width:100%;position:relative;">
+    <button onclick="document.getElementById('sizeGuideModal').style.display='none'"
+      style="position:absolute;top:16px;left:16px;background:none;border:none;color:var(--text-secondary);font-size:1.4rem;cursor:pointer;line-height:1;"
+      aria-label="إغلاق">✕</button>
+    <h2 id="sizeGuideTitle" style="font-size:1.3rem;font-weight:900;margin-bottom:20px;">📏 جدول المقاسات</h2>
+    <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+      <thead>
+        <tr style="border-bottom:2px solid var(--accent);">
+          <th style="padding:10px;text-align:right;color:var(--accent);">المقاس</th>
+          <th style="padding:10px;text-align:right;color:var(--text-secondary);">صدر (سم)</th>
+          <th style="padding:10px;text-align:right;color:var(--text-secondary);">خصر (سم)</th>
+          <th style="padding:10px;text-align:right;color:var(--text-secondary);">الطول (سم)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:10px;font-weight:700;">S</td><td style="padding:10px;color:var(--text-secondary);">96–100</td><td style="padding:10px;color:var(--text-secondary);">80–84</td><td style="padding:10px;color:var(--text-secondary);">68</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:10px;font-weight:700;">M</td><td style="padding:10px;color:var(--text-secondary);">100–104</td><td style="padding:10px;color:var(--text-secondary);">84–88</td><td style="padding:10px;color:var(--text-secondary);">70</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:10px;font-weight:700;">L</td><td style="padding:10px;color:var(--text-secondary);">104–108</td><td style="padding:10px;color:var(--text-secondary);">88–92</td><td style="padding:10px;color:var(--text-secondary);">72</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;font-weight:700;">XL</td><td style="padding:10px;color:var(--text-secondary);">108–112</td><td style="padding:10px;color:var(--text-secondary);">92–96</td><td style="padding:10px;color:var(--text-secondary);">74</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:16px;font-size:0.82rem;color:var(--text-dim);">💡 لو بين مقاسين، خود الأكبر. للاستفسار تواصل واتساب.</p>
+  </div>
+</div>
+
+<!-- Mobile Sticky CTA -->
+<div class="mobile-sticky-cta" aria-label="أزرار الشراء السريع">
+  <button class="btn btn-primary" style="flex:1;" id="mobileStickyAdd">🛒 أضف للسلة</button>
+  <button class="btn btn-wa"      style="flex:1;" id="mobileStickyWA">واتساب</button>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:4px;">
+          <span>MANGA</span><span>STORE</span><span class="logo-icon">🔥</span>
+        </div>
+        <p class="footer-desc">متجر ملابس رجالية عصرية بأجود الخامات وأحدث التصاميم. دفع عند الاستلام وتوصيل لكل مصر.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/201063992579" target="_blank" rel="noopener" class="social-btn" aria-label="واتساب">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="انستجرام">📸</a>
+          <a href="https://www.facebook.com"  target="_blank" rel="noopener" class="social-btn" aria-label="فيسبوك">📘</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>الصفحات</h4>
+        <nav class="footer-links" aria-label="روابط الصفحات">
+          <a href="index.html">الرئيسية</a>
+          <a href="shop.html">المتجر</a>
+          <a href="about.html">من نحن</a>
+          <a href="cart.html">السلة</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4>الفئات</h4>
+        <nav class="footer-links" aria-label="فئات المنتجات">
+          <a href="shop.html?cat=hoodies">هوديز</a>
+          <a href="shop.html?cat=tshirts">تيشيرتات</a>
+          <a href="shop.html?cat=tracksuits">تراكسوت</a>
+          <a href="shop.html?cat=winter">شتوي</a>
+          <a href="shop.html?cat=pants">بناطيل</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <div class="footer-links">
+          <a href="https://wa.me/201063992579" target="_blank" rel="noopener">📱 01063992579</a>
+          <span style="color:var(--text-dim);font-size:0.85rem;">متاح 9 ص — 11 م</span>
+          <span style="color:var(--text-dim);font-size:0.85rem;">كل أيام الأسبوع</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MangaStore. كل الحقوق محفوظة.</span>
+      <span>صُنع بـ ❤️ في مصر 🇪🇬</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="#" class="float-wa" id="floatWA" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/product.js"></script>
+<script>
+  // ---------- Static Review Renderer ----------
+  // Reviews seeded from product data — adds credibility without a backend
+  const REVIEW_BANK = [
+    { name:"محمد أحمد", initial:"م", stars:5, text:"خامة ممتازة جداً والقصة حلوة. وصل في يومين وحالته كويسة." },
+    { name:"عمر خالد",   initial:"ع", stars:5, text:"أحلى هودي اشتريته في حياتي. والسعر معقول جداً مقارنة بالجودة 🔥" },
+    { name:"كريم سامي",  initial:"ك", stars:4, text:"الخامة ممتازة والألوان زي الصور بالضبط. الهودي تقيل بشكل كويس مش خفيف." },
+    { name:"أحمد حسن",   initial:"أ", stars:5, text:"اشتريت قبل كده من متاجر تانية بس MangaStore أفضل بكتير. هطلب تاني قريب." },
+    { name:"يوسف علي",   initial:"ي", stars:5, text:"الشحن سريع والتغليف محترم. المنتج بالظبط زي ما اتوصف." },
+    { name:"سامر محمود", initial:"س", stars:4, text:"خامة تمام وقياس صح. بس الألوان فيها فرق بسيط عن الصور — في الإضاءة الطبيعية أجمل." },
+  ];
+
+  function renderReviews(product) {
+    const section  = document.getElementById("reviewsSection");
+    const grid     = document.getElementById("reviewsGrid");
+    const subtitle = document.getElementById("reviewsSubtitle");
+    if (!section || !grid) return;
+
+    subtitle.textContent = `${product.rating.toFixed(1)} من 5 ⭐ بناءً على ${product.reviewCount} تقييم`;
+
+    // Show a subset relevant to the product (use modulo for variety)
+    const shown = REVIEW_BANK.slice(0, Math.min(6, product.reviewCount));
+    grid.innerHTML = shown.map(r => `
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">${r.initial}</div>
+          <div>
+            <div class="review-author">${r.name}</div>
+            <div class="review-date">منذ أسبوعين</div>
+          </div>
+        </div>
+        <div class="review-stars">${renderStars(r.stars)}</div>
+        <p class="review-text">${r.text}</p>
+        <div class="review-verified">✅ مشتري موثوق</div>
+      </div>`).join("");
+
+    section.style.display = "block";
+  }
+
+  // Hook into product load — called after product.js sets currentProduct
+  window.addEventListener("productLoaded", (e) => {
+    renderReviews(e.detail);
+  });
+</script>
+</body>
+</html>

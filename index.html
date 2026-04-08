@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MangaStore — ستايل رجالي عصري | أحدث كولكشن</title>
+  <meta name="description" content="MangaStore — متجر ملابس رجالية عصرية. أحدث الهوديز، التيشيرتات، التراكسوت والجاكيتات. خامات فاخرة وأسعار مناسبة. دفع عند الاستلام.">
+  <meta property="og:title" content="MangaStore — ستايل رجالي عصري">
+  <meta property="og:description" content="أحدث كولكشن من الملابس الرجالية العصرية. هوديز، تيشيرتات، تراكسوت.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- shake @keyframes moved to style.css -->
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span>MANGA</span><span>STORE</span>
+      <span class="logo-icon">🔥</span>
+    </a>
+    <nav class="main-nav" role="navigation" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="nav-link" data-page="index.html">الرئيسية</a>
+      <a href="shop.html" class="nav-link" data-page="shop.html">المتجر</a>
+      <a href="about.html" class="nav-link" data-page="about.html">من نحن</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://wa.me/201063992579?text=مرحباً! أريد الاستفسار عن منتجاتكم 🔥"
+         target="_blank" rel="noopener" class="btn-wa-header" id="headerWABtn" aria-label="تواصل واتساب">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        اطلب واتساب
+      </a>
+      <a href="cart.html" class="cart-btn" id="cartBtn" aria-label="عربة التسوق">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="القائمة المحمولة">
+  <a href="index.html" class="nav-link" data-page="index.html">🏠 الرئيسية</a>
+  <a href="shop.html" class="nav-link" data-page="shop.html">🛍 المتجر</a>
+  <a href="about.html" class="nav-link" data-page="about.html">ℹ️ من نحن</a>
+  <a href="cart.html" class="nav-link" data-page="cart.html">🛒 السلة</a>
+  <a href="https://wa.me/201063992579" target="_blank" class="btn btn-wa btn-block" style="margin-top:8px;">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    01063992579
+  </a>
+</nav>
+
+<main class="page-content">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-label="قسم الترحيب">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">🔥 كولكشن 2026 وصل!</div>
+        <h1 class="hero-title">
+          ستايلك
+          <span class="highlight">يتكلم عنك</span>
+        </h1>
+        <p class="hero-subtitle">
+          أجود الخامات، أحدث التصاميم العصرية. هوديز، تيشيرتات، تراكسوت وجاكيتات رجالية بأسعار تنافسية.
+        </p>
+        <div class="hero-actions">
+          <a href="shop.html" class="btn btn-primary btn-lg">تسوق الآن 🛍</a>
+          <a href="https://wa.me/201063992579?text=مرحباً! أريد الاستفسار عن منتجاتكم 🔥"
+             target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            تواصل واتساب
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">+500</span>
+            <span class="stat-label">عميل سعيد</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">8</span>
+            <span class="stat-label">منتج مميز</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">4.8★</span>
+            <span class="stat-label">متوسط التقييم</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-image-stack">
+          <img class="hero-img-main"
+            src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&q=85"
+            alt="هودي أوفرسايز MangaStore" loading="eager">
+          <img class="hero-img-float"
+            src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&q=80"
+            alt="تيشيرت MangaStore" loading="lazy">
+          <div class="hero-badge-float">
+            <span class="badge-icon">📦</span>
+            <div class="badge-text">
+              <strong>دفع عند الاستلام</strong>
+              توصيل لكل مصر
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <div class="trust-strip" role="complementary" aria-label="مميزاتنا">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <div class="trust-icon">🚚</div>
+        <div class="trust-text">
+          <strong>توصيل سريع</strong>
+          <span>خلال 24-48 ساعة لكل مصر</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💳</div>
+        <div class="trust-text">
+          <strong>دفع عند الاستلام</strong>
+          <span>Cash on Delivery</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔄</div>
+        <div class="trust-text">
+          <strong>إرجاع مجاني</strong>
+          <span>خلال 7 أيام من الاستلام</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TRENDING NOW ============ -->
+  <section class="section" aria-label="المنتجات الأكثر طلباً">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">🔥 الأكثر <span class="title-accent">طلباً</span></h2>
+        <p class="section-subtitle">أعلى المنتجات مبيعاً هذا الشهر</p>
+      </div>
+      <a href="shop.html" class="section-link">كل المنتجات ←</a>
+    </div>
+    <div class="products-grid" id="trendingGrid"></div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="section" style="padding-top:0;" aria-label="تصفح حسب الفئة">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">تسوق حسب <span class="title-accent">الفئة</span></h2>
+        <p class="section-subtitle">اختار الستايل اللي يناسبك</p>
+      </div>
+    </div>
+    <div class="categories-grid">
+      <a href="shop.html?cat=hoodies" class="category-card" aria-label="تصفح الهوديز">
+        <img src="https://images.unsplash.com/photo-1614975059251-992f11792b9f?w=600&q=80" alt="هوديز رجالي" loading="lazy">
+        <div class="category-card-overlay">
+          <div class="category-card-name">🧥 هوديز</div>
+          <div class="category-card-count">3 منتجات</div>
+        </div>
+      </a>
+      <a href="shop.html?cat=tshirts" class="category-card" aria-label="تصفح التيشيرتات">
+        <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&q=80" alt="تيشيرتات رجالي" loading="lazy">
+        <div class="category-card-overlay">
+          <div class="category-card-name">👕 تيشيرتات</div>
+          <div class="category-card-count">2 منتجات</div>
+        </div>
+      </a>
+      <a href="shop.html?cat=tracksuits" class="category-card" aria-label="تصفح التراكسوت">
+        <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=600&q=80" alt="تراكسوت رجالي" loading="lazy">
+        <div class="category-card-overlay">
+          <div class="category-card-name">🏃 تراكسوت</div>
+          <div class="category-card-count">1 منتج</div>
+        </div>
+      </a>
+      <a href="shop.html?cat=winter" class="category-card" aria-label="تصفح الشتوي">
+        <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600&q=80" alt="ملابس شتوية رجالي" loading="lazy">
+        <div class="category-card-overlay">
+          <div class="category-card-name">🧣 شتوي</div>
+          <div class="category-card-count">1 منتج</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ LIMITED OFFER COUNTDOWN ============ -->
+  <section class="section" style="padding-top:0;" aria-label="عرض محدود">
+    <div class="countdown-section">
+      <div class="countdown-label">⏰ عرض محدود الوقت</div>
+      <h2 class="countdown-title">خصم <span style="color:var(--accent)">37%</span> على التراكسوت الكامل</h2>
+      <div class="timer-wrap" id="countdownTimer">
+        <div class="timer-block"><div class="timer-num t-days">00</div><div class="timer-label-cd">يوم</div></div>
+        <div class="timer-sep">:</div>
+        <div class="timer-block"><div class="timer-num t-hours">00</div><div class="timer-label-cd">ساعة</div></div>
+        <div class="timer-sep">:</div>
+        <div class="timer-block"><div class="timer-num t-mins">00</div><div class="timer-label-cd">دقيقة</div></div>
+        <div class="timer-sep">:</div>
+        <div class="timer-block"><div class="timer-num t-secs">00</div><div class="timer-label-cd">ثانية</div></div>
+      </div>
+      <a href="product.html?id=4" class="btn btn-primary btn-lg">اشتري قبل انتهاء العرض 🔥</a>
+    </div>
+  </section>
+
+  <!-- ============ NEW ARRIVALS ============ -->
+  <section class="section" style="padding-top:0;" aria-label="وصل حديثاً">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">✨ وصل <span class="title-accent">حديثاً</span></h2>
+        <p class="section-subtitle">أحدث المنتجات في كولكشننا</p>
+      </div>
+      <a href="shop.html" class="section-link">شوف الكل ←</a>
+    </div>
+    <div class="products-grid" id="newGrid"></div>
+  </section>
+
+  <!-- ============ INSTAGRAM ============ -->
+  <section class="section" style="padding-top:0;" aria-label="معرض Instagram">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">📸 شاركنا <span class="title-accent">ستايلك</span></h2>
+        <p class="section-subtitle">بهاشتاق #MangaStore على انستجرام 🔥</p>
+      </div>
+    </div>
+    <div class="insta-grid">
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&q=75" alt="ستايل MangaStore 1" loading="lazy"></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&q=75" alt="ستايل MangaStore 2" loading="lazy"></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1614975059251-992f11792b9f?w=400&q=75" alt="ستايل MangaStore 3" loading="lazy"></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=400&q=75" alt="ستايل MangaStore 4" loading="lazy"></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400&q=75" alt="ستايل MangaStore 5" loading="lazy"></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400&q=75" alt="ستايل MangaStore 6" loading="lazy"></div>
+    </div>
+    <div style="text-align:center;margin-top:24px;">
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="btn btn-secondary">
+        📸 تابعنا على انستجرام
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ WHATSAPP CTA ============ -->
+  <section class="section" style="padding-top:0;">
+    <div style="background:linear-gradient(135deg, rgba(37,211,102,0.1) 0%, rgba(8,8,8,0) 70%);border:1px solid rgba(37,211,102,0.3);border-radius:var(--radius-xl);padding:48px 40px;text-align:center;">
+      <div style="font-size:3rem;margin-bottom:16px;">💬</div>
+      <h2 style="font-size:1.8rem;font-weight:900;margin-bottom:12px;">محتاج مساعدة في الطلب؟</h2>
+      <p style="color:var(--text-secondary);margin-bottom:24px;font-size:1rem;max-width:400px;margin-inline:auto;">تواصل معنا مباشرة على واتساب وهنساعدك تختار الستايل اللي يناسبك</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a href="https://wa.me/201063992579?text=مرحباً! أريد الاستفسار عن منتجاتكم 🔥"
+           target="_blank" rel="noopener" class="btn btn-wa btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          01063992579 — اتصل الآن
+        </a>
+        <a href="shop.html" class="btn btn-primary btn-lg">تسوق الآن 🛍</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:4px;">
+          <span>MANGA</span><span>STORE</span><span class="logo-icon">🔥</span>
+        </div>
+        <p class="footer-desc">متجر ملابس رجالية عصرية بأجود الخامات وأحدث التصاميم. دفع عند الاستلام وتوصيل لكل مصر.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/201063992579" target="_blank" rel="noopener" class="social-btn" aria-label="واتساب">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="انستجرام">📸</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="فيسبوك">📘</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>الصفحات</h4>
+        <nav class="footer-links" aria-label="روابط الصفحات">
+          <a href="index.html">الرئيسية</a>
+          <a href="shop.html">المتجر</a>
+          <a href="about.html">من نحن</a>
+          <a href="cart.html">السلة</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4>الفئات</h4>
+        <nav class="footer-links" aria-label="فئات المنتجات">
+          <a href="shop.html?cat=hoodies">هوديز</a>
+          <a href="shop.html?cat=tshirts">تيشيرتات</a>
+          <a href="shop.html?cat=tracksuits">تراكسوت</a>
+          <a href="shop.html?cat=winter">شتوي</a>
+          <a href="shop.html?cat=pants">بناطيل</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <div class="footer-links">
+          <a href="https://wa.me/201063992579" target="_blank" rel="noopener">📱 01063992579</a>
+          <span style="color:var(--text-dim);font-size:0.85rem;">متاح 9 ص — 11 م</span>
+          <span style="color:var(--text-dim);font-size:0.85rem;">كل أيام الأسبوع</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MangaStore. كل الحقوق محفوظة.</span>
+      <span>صُنع بـ ❤️ في مصر 🇪🇬</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/201063992579?text=مرحباً! أريد الاستفسار عن منتجاتكم 🔥"
+   target="_blank" rel="noopener"
+   class="float-wa" id="floatWA" aria-label="تواصل عبر واتساب">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Trending: top rated
+    const trending = [...PRODUCTS].sort((a,b) => b.rating - a.rating).slice(0, 4);
+    document.getElementById("trendingGrid").innerHTML = trending.map(renderProductCard).join("");
+
+    // New arrivals: different 4
+    const newArrivals = [...PRODUCTS].slice(4, 8);
+    document.getElementById("newGrid").innerHTML = newArrivals.map(renderProductCard).join("");
+
+    // Countdown: 3 days from now
+    const target = new Date();
+    target.setDate(target.getDate() + 3);
+    target.setHours(23, 59, 59, 0);
+    initCountdown(document.getElementById("countdownTimer"), target);
+  });
+</script>
+</body>
+</html>
